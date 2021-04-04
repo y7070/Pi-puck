@@ -2,7 +2,7 @@ from smbus2 import SMBus, i2c_msg
 import sys
 import time
 
-I2C_CHANNEL = 4
+I2C_CHANNEL = 4 + 8
 GROUNDSENSOR_ADDRESS = 0x60  # Device address
 
 groundData = bytearray([0] * 6)

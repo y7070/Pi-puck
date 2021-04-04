@@ -5,7 +5,7 @@ import sys
 import smbus
 
 
-I2C_CHANNEL = 3
+I2C_CHANNEL = 3 + 8
 I2C_ADDR = 0x70
 
 try:

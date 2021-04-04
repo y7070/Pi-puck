@@ -1,7 +1,7 @@
 from smbus2 import SMBus, i2c_msg
 import sys
 
-I2C_CHANNEL = 4
+I2C_CHANNEL = 4 + 8
 ROB_ADDR = 0x1F
 ACTUATORS_SIZE = 20
 SENSORS_SIZE = 47

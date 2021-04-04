@@ -5,7 +5,7 @@ import sys
 import smbus
 import subprocess
 
-I2C_CHANNEL = 4
+I2C_CHANNEL = 4 + 8
 SENSOR_I2C_ADDR = 0x6e
 OV7670_ADDR = 0x21
 

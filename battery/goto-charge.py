@@ -6,12 +6,12 @@ import sys
 from smbus2 import SMBus, i2c_msg
 import subprocess
 
-I2C_CHANNEL = 4
+I2C_CHANNEL = 4 + 8
 ROB_ADDR = 0x1F
 ACTUATORS_SIZE = (19+1) # Data + checksum.
 SENSORS_SIZE = (46+1) # Data + checksum.
 
-I2C_CHANNEL_FT903 = 3
+I2C_CHANNEL_FT903 = 3 + 8
 FT903_I2C_ADDR = 0x1C
 
 CHARGE_PIN = 13

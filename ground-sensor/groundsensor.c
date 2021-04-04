@@ -54,7 +54,7 @@ int read_reg(int file, uint8_t reg, int count) {
 */
 int main() {
 
-	fh = open("/dev/i2c-4", O_RDWR);	// open the I2C dev driver for bus 3
+	fh = open("/dev/i2c-12", O_RDWR);	// open the I2C dev driver for bus 3
 
 	ioctl(fh, I2C_SLAVE, 0x60);			// tell the driver we want the device with address 0x60 on the I2C bus
 

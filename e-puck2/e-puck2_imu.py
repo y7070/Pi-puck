@@ -3,7 +3,7 @@ import sys
 import time
 import struct
 
-I2C_CHANNEL = 4
+I2C_CHANNEL = 4 + 8
 NUM_SAMPLES_CALIBRATION = 20
 GRAVITY_MPU9250 = 16384 # To be defined...1 g for 16 bits accelerometer
 AK8963_ADDRESS = 0x0C # Address of magnetometer

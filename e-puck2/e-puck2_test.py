@@ -2,7 +2,7 @@ from smbus2 import SMBus, i2c_msg
 import sys
 import time
 
-I2C_CHANNEL = 4
+I2C_CHANNEL = 12
 ROB_ADDR = 0x1F
 ACTUATORS_SIZE = (19+1) # Data + checksum.
 SENSORS_SIZE = (46+1) # Data + checksum.

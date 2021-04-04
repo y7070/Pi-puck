@@ -108,7 +108,7 @@ int main() {
 	}		
 	close(fh1);	
 	
-	fh = open("/dev/i2c-4", O_RDWR);	// open the I2C dev driver for bus 4
+	fh = open("/dev/i2c-12", O_RDWR);	// open the I2C dev driver for bus 4
 
 	ioctl(fh, I2C_SLAVE, ROBOT_ADDR);
 

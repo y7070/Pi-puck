@@ -5,7 +5,7 @@ import sys
 import smbus
 
 
-I2C_CHANNEL = 3
+I2C_CHANNEL = 3 + 8
 FT903_I2C_ADDR = 0x1C
 loop = 0
 

@@ -133,7 +133,7 @@ void calibrateGyro() {
 
 int main() {
 
-	fh = open("/dev/i2c-4", O_RDWR);	// open the I2C dev driver for bus 4
+	fh = open("/dev/i2c-12", O_RDWR);	// open the I2C dev driver for bus 4
 
 	initIMU();
 	

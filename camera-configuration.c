@@ -13,7 +13,7 @@
 #include <sys/ioctl.h>
 #include <stdint.h>
 
-#define I2C_CHANNEL 4
+#define I2C_CHANNEL 12
 #define OV7670_ADDR 0x21
 
 /*######################
@@ -181,7 +181,7 @@ int ov7670_init(void) {
 
 int main(int argc, char *argv[]) {
 
-	sprintf( filename, "/dev/i2c-%d", 4);
+	sprintf( filename, "/dev/i2c-%d", 4 + 8);
 	if ((file = open(filename, O_RDWR)) < 0) {
 		/* ERROR HANDLING: you can check errno to see what went wrong */
 		perror("Failed to open the i2c bus");
